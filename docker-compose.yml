@@ -1,0 +1,10 @@
+version: '3'
+services:
+  anomaly-detector:
+    image: anomaly-detector
+    volumes:
+      - ./TestingData:/anomaly-detector/TestingData
+      - ./TrainingData:/anomaly-detector/TrainingData    
+      - ./plots:/anomaly-detector/plots      
+      - ./NetworkModels:/anomaly-detector/NetworkModels      
+      - ./Logs:/anomaly-detector/Logs
